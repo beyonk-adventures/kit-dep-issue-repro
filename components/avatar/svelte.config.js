@@ -6,14 +6,6 @@ const config = {
     // hydrate the <div id="svelte"> element in src/app.html
     target: '#svelte',
 
-    vite: {
-      resolve: {
-        alias: {
-          '@beyonk/avatar': path.resolve('src/lib')
-        }
-      }
-    },
-
     package: {
       emitTypes: false,
       exports: (file) => file === 'index.js'
