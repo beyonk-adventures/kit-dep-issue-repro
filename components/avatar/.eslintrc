@@ -1,0 +1,6 @@
+{ 
+  "extends": "@beyonk/eslint-config/svelte",
+  "parserOptions": {
+    "ecmaVersion": 2020
+  }
+} 

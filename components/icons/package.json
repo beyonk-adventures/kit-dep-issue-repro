@@ -1,0 +1,24 @@
+{
+  "name": "@beyonk/icons",
+  "version": "3.1.2",
+  "description": "Icons for Beyonk",
+  "main": "lib/icons/system/index.js",
+  "svelte": "lib/icons/system/index.js",
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": "./lib/icons/system/index.js",
+    "./package.json": "./package.json",
+    "./system": "./lib/icons/system/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "just-pascal-case": "~1.1.0",
+    "svelte": "^3.44.2",
+    "svgo": "^2.8.0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "description": "Beyonk Web Monorepo",
+  "scripts": {
+    "build": "pnpm build --filter ./apps --filter ./components --filter ./libs",
+    "lint": "pnpm lint --filter ./apps --filter ./components --filter ./libs",
+    "test": "pnpm test --filter ./apps --filter ./components --filter ./libs",
+    "vercel-build": "pnpm vercel-build --filter ./apps",
+    "preinstall": "npx only-allow pnpm",
+    "ci:version": "pnpm changeset version && pnpm install --no-frozen-lockfile && git add .",
+    "ci:publish": "pnpm changeset tag && pnpm publish --filter ./components --filter ./libs",
+    "purge": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \\;",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beyonk-adventures/lander.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beyonk-adventures/lander/issues"
+  },
+  "homepage": "https://github.com/beyonk-adventures/lander#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.18.0",
+    "husky": "^7.0.4"
+  },
+  "volta": {
+    "node": "14.18.1"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+*.log
+vercel.json
+apps/**/pnpm-lock.yaml
+components/**/pnpm-lock.yaml
+.vercel_build_output

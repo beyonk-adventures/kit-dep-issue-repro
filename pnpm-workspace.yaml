@@ -1,0 +1,5 @@
+packages:
+  - 'libs/*'
+  - 'components/*'
+  - 'apps/*'
+link-workspace-packages: deep
